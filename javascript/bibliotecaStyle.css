@@ -1,0 +1,154 @@
+
+body{
+  font-family: 'Times New Roman', serif;
+  background-color: #e3f1f2;  
+  color: #000000;  /* Culoare text standard */
+  margin: 10px;
+  padding: 10px;
+  overflow-x: hidden;
+  font-size: 30px;
+  font-size:16px;
+}
+#searchIcon{
+    width: 5%;
+    height: 5%;
+    margin-left: 10px;
+    margin-top: 10px;
+
+
+}
+#myInput {
+    background-image: url(https://www.w3schools.com/css/searchicon.png);/* Add a search icon to input */
+    background-position: 10px 12px; /* Position the search icon */
+    background-repeat: no-repeat; /* Do not repeat the icon image */
+    width: 100%; /* Full-width */
+    font-size: 16px; /* Increase font-size */
+    padding: 12px 20px 12px 40px; /* Add some padding */
+    border: 1px solid #009DD1;/* Add a grey border */
+    margin-bottom: 12px; /* Add some space below the input */
+  }
+  
+  #myUL {
+    /* Remove default list styling */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #myUL li a {
+    border: 1px solid #009DD1 ; /* Add a border to all links */
+    margin-top: px; /* Prevent double borders */
+    background-color: white; /* Grey background color */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove default text underline */
+    font-size: 18px; /* Increase the font-size */
+    color: black; /* Add a black text color */
+    display: block; /* Make it into a block element to fill the whole list */
+  }
+  
+  #myUL li a:hover:not(.header) {
+    background-color: #97E7F5; /* Add a hover effect to all links, except for headers */
+  }
+
+  section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5F5;
+  }
+
+.section:hover{
+  transform: linear;
+}
+
+.card,.hover-shadow:hover
+{ 
+  box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)
+}
+.button-card{
+color:#000!important;
+background-color:#7ED348!important;
+padding: 10px;
+
+}  
+.button-card:hover{
+  background-color: #2a9b66!important;
+  color:#000!important;
+}
+
+
+
+.card:hover{
+ 
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    text-align: center;
+    
+}
+img{
+float:left;
+
+    width: 20%;
+    height: 20%;
+}
+
+.text-card{
+  margin-top: 6%;
+  margin-bottom:6%;
+  margin-right:6%;
+  margin-left: 6%;
+    text-align: left;
+    font-size: 18px;
+    color: #000;
+   
+    
+}
+h2{
+
+  font-size: 20px;
+  font-weight: bold;
+}
+@media screen and (max-width: 600px) {
+  section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5F5;
+  }
+  .card,.hover-shadow:hover
+{ 
+  box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)
+}
+img {
+  float: left;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.videoAd{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 10px;
+  background-color: #F5F5F5;
+}
+}
+.container:hover{
+
+  background-color: blueviolet;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+a:hover{
+ background-color:  #2a9b66; 
+}
+
+pre{
+  background-color: #009DD1;;
+}
