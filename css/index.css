@@ -1,0 +1,414 @@
+ body {
+    font-family: 'Times New Roman', serif;
+    background-color: #f4f4f4;  
+    color: #009DD1;  /* Culoare text standard */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+ /* Stil pentru logo-ul din bara de navigare */
+.logo{
+    width: 30px; /* Dimensiune mai mica pentru logo */
+    height: 20px;
+}
+
+.logo-img {
+    width: 30px;  
+    height: 20px;  
+    object-fit: cover; /* Asigura ca imaginea se ajusteaza corect în  dimensiuni */
+}
+
+.logo {
+     
+    width: 30px;  /* latime exacta a logo-ului */
+    height: 20px;  /* inaltimeexacta a logo-ului */
+}
+
+/* Logo-ul din bara de navigare */
+.logo img {
+    width: 50px;  /* Dimensiune logo */
+    height: auto;
+}
+
+.logo img:hover {
+    transform: scale(1.1); /* Mareste logo-ul usor */
+    transition: transform 0.3s ease; /* Face tranzitia mai fluida */
+    filter: brightness(1.2); /* Creste luminozitatea logo-ului */
+}
+
+/* Bara de navigare fixa */
+nav {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    background-color: #009DD1; 
+    padding: 10px 20px;
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    
+}
+
+/* Linkuri normale din navigare */
+.nav-links {
+    display: flex;
+    gap: 20px; /* Spatiu intre linkuri */
+
+}
+
+/* Burger menu ascuns pe ecrane mari */
+.burger-menu {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: white;
+}
+
+/* Media query pentru ecrane mici */
+@media (max-width: 768px) {
+    /* Burger menu vizibil */
+    .burger-menu {
+        display: block;
+        position: absolute;
+        right: 20px; /* Fixat in dreapta */
+        top: 15px;
+    }
+/* Ascunde linkurile de navigare initial */
+.nav-links {
+    display: none; /* Ascunde meniul de navigare implicit */
+    flex-direction: column; /* Meniul vertical */
+    position: absolute;
+    top: 60px; 
+    right: 20px;
+    background-color: #009DD1;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(31, 109, 225, 0.2);
+}
+
+/* Cand burger menu-ul este activ, afiseaza linkurile */
+.nav-links.active {
+    display: flex;
+}
+
+/* Ajustari pentru linkuri */
+.nav-links a {
+    padding: 10px 0;
+    text-align: right;
+}
+
+nav {
+    flex-direction: column; /* Aliniaza bara de navigare pe verticala pe ecrane mici */
+    align-items: flex-start;
+}
+/* Schimbam stilurile pentru linkurile din nav pe mobil */
+nav a {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.logo {
+    font-size:28px;
+}
+main {
+    padding:15px;
+}
+
+h2 {
+    font-size:22px;
+}
+
+ul li {
+    font-size: 16px;
+}
+
+}
+
+/* Stil pentru linkurile din meniu */
+nav a {
+    color: white; 
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px;  
+}
+
+/* Efect hover uniform pentru toate linkurile */
+nav a:hover {
+    background-color: #7a97f6; /* Fundal la hover */
+    color: white; 
+}
+/* Stilul pentru link-urile active */
+nav a.active {
+    background-color: #555; 
+    color: rgb(38, 0, 255); 
+    font-weight: bold; 
+    border-bottom: 2px solid  rgb(38, 0, 255); 
+    border-radius: 5px; 
+}
+
+/* Pentru link-ul activ */
+nav a.active:hover {
+    background-color: #17bad3; /* Schimba fundalul la hover */
+    color: white; 
+}
+
+/* Adauga spațiu pentru conținut sub bara fixa */
+main {
+    margin-top: 80px; /* Spatiu pentru bara de navigare */
+    padding: 20px;
+}
+
+h1{
+    color: #120101;
+    text-align: center;
+}
+
+aside
+{
+    color:#120101;
+    font-size:17px;
+    text-align: center;
+} 
+
+/* Sectiunea cu poze si textul */
+.describe {
+    display: flex;
+    flex-direction: row; /* Aliniaza pozele și textul pe orizontala pe ecrane mari */
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+    flex-wrap: wrap; /* Permite impachetarea pe ecrane mici */
+    color:#120101;
+    font-size:20px;
+    text-align: center;
+}
+
+.describe img {
+    width: 100%;
+    max-width: 300px; /* Limiteaza dimensiunea imaginii */
+    height: auto;
+    border: 2px solid #009DD1;
+    border-radius: 10px;
+}
+
+/* Media query pentru a micsora imaginea logo-ului pe dispozitive mici */
+@media (max-width: 480px) {
+    nav img {
+        width: 25px; /* Logo mai mic pe ecrane foarte mici */
+    }
+}
+/* Footer */
+footer {
+    background-color: #009DD1;  /* Fundal  pentru footer */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    position: relative;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+/* Efect hover pentru linkurile din footer */
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Media query pentru a face pagina responsive pe dispozitive mai mici */
+ 
+.gallery {
+    text-align: center;
+    padding: 40px; /* padding pentru mai mult spatiu */
+}
+
+.gallery h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #120101;
+}
+
+/* Container pentru imagini */
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Spatiu intre imagini */
+    flex-wrap: wrap; 
+}
+
+/* Stil pentru fiecare element de imagine */
+.image-item {
+    position: relative;
+    width: 250px; /* Dimensiune fixa pentru imagine */
+    height: 250px; /* Dimensiune fixa pentru imagine */
+    padding: 10px;
+    background-color: #f8f8f8;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Efect hover pe imagine */
+.image-item:hover {
+    transform: scale(1.05);
+}
+
+/* Container pentru imagine cu overlay */
+.image-overlay {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* Imagini responsive cu padding */
+.image-overlay img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusteaza imaginea pentru a se potrivi perfect */
+    border-radius: 10px;
+}
+
+/* Textul care apare pe hover */
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: rgb(19, 13, 13);
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Efect hover pentru overlay-text */
+.image-overlay:hover .overlay-text {
+    opacity: 1;
+}
+
+/* Alte stiluri pentru imagini */
+.image-item:hover .image-overlay img {
+    opacity: 0.7; /* Imaginile vor deveni usor transparente cand se face hover */
+}
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+
+  button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    position: inherit;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+  
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+  }
+  
+  .container {
+    padding: 16px;
+  }
+  
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  .modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;  
+    overflow: auto;  
+    background-color: rgb(0,0,0);  
+    background-color: rgba(0,0,0,0.4);  
+    padding-top: 60px;
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;  
+    border: 1px solid #888;
+    width: 80%; 
+  }
+   
+  .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  } 
+   
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  
+  @media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+  }
